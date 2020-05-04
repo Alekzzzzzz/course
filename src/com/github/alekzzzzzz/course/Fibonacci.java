@@ -10,13 +10,17 @@ public class Fibonacci {
         System.out.println(fibo(10));
     }
 
-    private static int fibo(int i) {
-        if (i == 0) {
-            return 0;
-        }if (i == 1){
-            return 1;
-        }else {
-            return fibo(i - 2) + fibo(i -1);
+    private static int  fibo(int a) {
+        int first = 0;
+        int next = 1;
+        int courent = 0;
+        for (int i = 1; i < 10;i++){
+            courent = first + next;
+            first = next;
+            next = courent;
+            System.out.println(courent);
+
         }
+        return courent;
     }
 }

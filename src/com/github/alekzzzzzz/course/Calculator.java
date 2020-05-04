@@ -1,3 +1,5 @@
+package com.github.alekzzzzzz.course;
+
 import java.util.Scanner;
 
 public class Calculator {

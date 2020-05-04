@@ -1,3 +1,5 @@
+package com.github.alekzzzzzz.course;
+
 /**
  * Класс выполняющий математические действия
  */

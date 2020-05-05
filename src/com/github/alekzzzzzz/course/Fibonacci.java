@@ -6,8 +6,9 @@ public class Fibonacci {
 
 
     public static void main(String[] args) {
-
-        System.out.println(fibo2(10));
+       Robot2 robot2 = new Robot2();
+        System.out.println(robot2.culc(10,2));
+        System.out.println(robot2.culc1(1,1));
     }
 
     private static int  fibo1(int i) {

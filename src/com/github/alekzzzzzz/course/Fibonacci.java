@@ -6,10 +6,15 @@ public class Fibonacci {
 
 
     public static void main(String[] args) {
+
        Robot1 robot1 = new Robot1();
        Robot2 robot2 =  new Robot2();
-       robot1.culc(10,2);
-       robot2.culc(10,5);
+       robot1.setNumber1(10);
+       robot2.setNumber1(10);
+       robot1.setNumber2(6);
+       robot2.setNumber2(6);
+       robot1.culc();
+       robot2.culc();
        robot2.culc1();
     }
 

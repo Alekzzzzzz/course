@@ -6,22 +6,24 @@ public class Robot1 {
    private double number2;
 
 
-     void setNumber12(double a,double b) {
+     void setNumber1(double a) {
         this.number1 = a;
-        this.number2 = b;
-         System.out.println("Поля number1 и number2 = " + a +" и " + b );
      }
 
+     void setNumber2(double b) {
+        this.number2 = b;
 
-    public void culc(double a,double b){
-        setNumber12(a,b);
+    }
+
+    public void culc(){
         MathOperations mathOperations = new MathOperations();
-       double res = mathOperations.summa(a,b);
-        System.out.println("сумма a + b = " + res);
-       double res1 = mathOperations.proizvedenie(a,b);
-        System.out.println("произведение a + b = " + res1);
-        double res2 = mathOperations.chastnoe(a,b);
-        System.out.println("частное a + b = " + res2);
+       double res = mathOperations.summa(number1,number2);
+        System.out.println("сумма " + number1+" + " + number2 + " = "  + res);
+       double res1 = mathOperations.proizvedenie(number1,number2);
+        System.out.println("произведение "+ number1 +" * "+ number2+ "= " + res1);
+        double res2 = mathOperations.chastnoe(number1,number2);
+        System.out.println("частное "+ number1 +" / "+ number2+ "= " + res2);
+        System.out.println();
     }
 
 }

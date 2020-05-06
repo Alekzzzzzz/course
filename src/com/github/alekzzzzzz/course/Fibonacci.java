@@ -6,9 +6,11 @@ public class Fibonacci {
 
 
     public static void main(String[] args) {
-       Robot2 robot2 = new Robot2();
-        System.out.println(robot2.culc(10,2));
-        System.out.println(robot2.culc1(1,1));
+       Robot1 robot1 = new Robot1();
+       Robot2 robot2 =  new Robot2();
+       robot1.culc(10,2);
+       robot2.culc(10,5);
+       robot2.culc1();
     }
 
     private static int  fibo1(int i) {

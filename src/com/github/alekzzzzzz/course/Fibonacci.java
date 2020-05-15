@@ -10,14 +10,20 @@ public class Fibonacci {
        Robot1 robot1 = new Robot1();
        Robot2 robot2 =  new Robot2();
        robot1.setNumber1(10);
-       robot2.setNumber1(10);
        robot1.setNumber2(6);
+       robot2.setNumber1(10);
        robot2.setNumber2(6);
        robot1.culc();
        robot2.culc();
        robot2.culc1();
     }
 
+    /**
+     * рекурсивный метод
+     *
+     * @param i
+     * @return
+     */
     private static int  fibo1(int i) {
         if (i == 0) {
             return 0;
@@ -30,6 +36,12 @@ public class Fibonacci {
 
     }
 
+    /**
+     * метод с циклом
+     *
+     * @param a
+     * @return
+     */
     private static int fibo2(int a) {
         int first = 0;
         int next = 1;
